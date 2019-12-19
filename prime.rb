@@ -1,14 +1,6 @@
-def prime?(x)
-  if x == 1
-    return true 
-  elsif x < 1
-    return false
-  else
-  for y in 2..(x-1)
-    if (x % y) == 0
-      return false 
-    end
-  end 
-end
-  true
-end
+def prime?(number)
+  return false if !number.integer?
+  return false if number < 2 
+  return true if number ==atan2(2..number-1).each {|int| return false if number % int == 0)
+  true 
+end 
